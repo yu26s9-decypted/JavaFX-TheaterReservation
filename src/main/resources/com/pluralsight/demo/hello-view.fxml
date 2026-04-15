@@ -2,60 +2,67 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
 
 <VBox spacing="0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.pluralsight.demo.HelloController"
       styleClass="root-container">
 
-    <!-- Header Bar -->
-    <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="12">
-        <padding><Insets top="16" bottom="16" left="28" right="28"/></padding>
-        <Label text="" styleClass="header-icon"/>
+    <!-- Header -->
+    <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="10">
+        <padding><Insets top="20" bottom="20" left="36" right="36"/></padding>
         <Label text="Da best theater" styleClass="header-title"/>
-        <Label text="Reservation Kiosk for Da best theater" styleClass="header-subtitle"/>
+        <Label text="Reservation Kiosk" styleClass="header-subtitle"/>
     </HBox>
 
-    <Separator/>
+    <!-- Main Card -->
+    <VBox alignment="CENTER" spacing="0" VBox.vgrow="ALWAYS">
+        <padding><Insets top="40" bottom="40" left="180" right="180"/></padding>
 
-    <!-- Main Content -->
-    <VBox alignment="CENTER" spacing="16" VBox.vgrow="ALWAYS">
-        <padding><Insets top="40" bottom="40" left="200" right="200"/></padding>
+        <VBox styleClass="card" spacing="10">
 
-        <Label text="NEW RESERVATION" styleClass="section-label"/>
-        <Label text="Enter guest details below to complete booking"
-               styleClass="section-hint"/>
+            <Label text="New Reservation" styleClass="section-label"/>
+            <Label text="Enter your details below to complete your booking"
+                   styleClass="section-hint"/>
 
-        <Separator style="-fx-padding: 4 0;"/>
+            <Separator style="-fx-padding: 8 0;"/>
 
-        <Label text="Guest Name" styleClass="field-label"/>
-        <TextField fx:id="nameInput" promptText="First and Last Name"
-                   styleClass="pos-field"/>
+            <Label text="GUEST NAME" styleClass="field-label"/>
+            <TextField fx:id="nameInput" promptText="First and Last Name"
+                       styleClass="pos-field"/>
 
-        <Label text="Reservation Date" styleClass="field-label"/>
-        <TextField fx:id="DateInput" promptText="MM/DD/YYYY"
-                   styleClass="pos-field"/>
+            <Label text="RESERVATION DATE" styleClass="field-label"/>
+            <TextField fx:id="DateInput" promptText="MM/DD/YYYY"
+                       styleClass="pos-field"/>
 
-        <Label text="Number of Tickets" styleClass="field-label"/>
-        <TextField fx:id="TicketNumInput" promptText="e.g. 2"
-                   styleClass="pos-field"/>
+            <Label text="NUMBER OF TICKETS" styleClass="field-label"/>
+            <TextField fx:id="TicketNumInput" promptText="e.g. 2"
+                       styleClass="pos-field"/>
 
-        <Separator style="-fx-padding: 4 0;"/>
+            <Label text="SELECT MOVIE" styleClass="field-label"/>
+            <ComboBox fx:id="movieName" promptText="Choose a movie"
+                      styleClass="combo-box" maxWidth="Infinity"/>
 
-        <Label fx:id="welcomeText" styleClass="confirmation-text"/>
+            <Separator style="-fx-padding: 8 0;"/>
 
-        <Button text="CONFIRM RESERVATION" onAction="#onInputSubmit"
-                styleClass="pos-button" maxWidth="Infinity"/>
+            <Label fx:id="welcomeText" styleClass="confirmation-text"
+                   wrapText="true"/>
+
+            <Button text="Confirm Reservation" onAction="#onInputSubmit"
+                    styleClass="pos-button" maxWidth="Infinity"/>
+
+        </VBox>
     </VBox>
 
     <!-- Footer -->
     <HBox styleClass="footer-bar" alignment="CENTER">
-        <padding><Insets top="12" bottom="12"/></padding>
-        <Label text="CineCore POS v1.0  •  Terminal 01  •  Staff Mode"
+        <padding><Insets top="14" bottom="14"/></padding>
+        <Label text="Da best Theater  •  Terminal 01  •  Staff Mode"
                styleClass="footer-text"/>
     </HBox>
 

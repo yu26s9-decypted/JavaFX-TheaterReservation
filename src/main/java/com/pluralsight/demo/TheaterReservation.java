@@ -33,12 +33,12 @@ public class TheaterReservation {
             firstName = names[0];
             middleName = names[1];
             lastName = names[2];
-            return lastName + "" + firstName + " ." + middleName;
+            return lastName + ", " + firstName + " " + middleName + ".";
 
         } else {
             firstName = names[0];
             lastName = names[1];
-            return lastName + " " + firstName;
+            return lastName + ", " + firstName;
         }
     }
 
