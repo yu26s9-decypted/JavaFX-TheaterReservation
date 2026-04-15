@@ -48,3 +48,4 @@ This was inspired by real systems that I've taken inspiration from such as Toast
 
 ## Acknowledgements
 Thank you to my LTCA Instructor Matt for introducing me to JavaFX and encouraging me to explore in this direction.
+Claude (Anthropic) — Never gave me the answer. Just asked the right questions until I figured it out myself. Rubber duck with Socrates energy.
