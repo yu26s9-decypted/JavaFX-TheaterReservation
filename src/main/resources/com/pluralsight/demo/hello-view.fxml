@@ -17,7 +17,7 @@
         <padding><Insets top="16" bottom="16" left="28" right="28"/></padding>
         <Label text="" styleClass="header-icon"/>
         <Label text="Da best theater" styleClass="header-title"/>
-        <Label text="Reservation Kiosk" styleClass="header-subtitle"/>
+        <Label text="Reservation Kiosk for Da best theater" styleClass="header-subtitle"/>
     </HBox>
 
     <Separator/>
