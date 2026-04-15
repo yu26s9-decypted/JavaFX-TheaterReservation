@@ -1,3 +1,4 @@
+<img width="1915" height="982" alt="Screenshot 2026-04-15 at 1 21 25 AM" src="https://github.com/user-attachments/assets/fda37da4-3fb0-4590-acfc-6ef3ecbed484" />
 # Da Best Theater Reservation Kiosk
 
 This is my JavaFX kiosk simulation for managing a movie theater reservations. Made as part of my Year Up LTCA curriculum.
